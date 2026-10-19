@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite this software and the source datasets when using these analyses."
+title: "Collective Rotation History"
+type: software
+repository-code: "https://github.com/Arnold0824/collective-rotation-history"
+authors:
+  - family-names: Li
+    given-names: Runlin
+  - family-names: Yin
+    given-names: Mingxu
+  - family-names: Liu
+    given-names: Rui
+  - family-names: Peng
+    given-names: Qin
+license: MIT
+abstract: "Reproducible analyses for Recent history improves prediction of collective rotation in beetle and fish groups."

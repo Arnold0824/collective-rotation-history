@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "collective-rotation-history"
+version = "1.0.0"
+description = "Prediction and switching analyses of collective rotation in beetle and fish groups"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2.2,<3",
+  "pyarrow>=14,<23",
+  "scipy>=1.13,<2",
+  "matplotlib>=3.9,<4",
+  "PyMuPDF>=1.24,<2",
+]
+
+[tool.setuptools]
+py-modules = ["reproduce", "prepare", "fetch_sources"]
+
+[project.urls]
+Repository = "https://github.com/Arnold0824/collective-rotation-history"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["methods*", "fish*", "figures*", "preparation*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
